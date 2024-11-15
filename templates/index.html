@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Insurance Predictor</title>
+    <link rel="stylesheet" type='text/css' href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+<body>
+    <nav class='navbar'>
+        <div class="navdiv">
+            <div class="logo">Tejas Creates</div>
+            <ul >
+                <li class='l3'><a href="#top">More</a></li>        
+            </ul>
+        </div>
+    </nav>
+    <div class="main">
+        <h2><span id="one">H</span>ealth <span id="two">I</span>nsurance <span id="three">P</span>redictor</h2>
+    </div>
+    <div class="content">
+        <form action="/predict" method="POST">
+            <div class="entry1">
+                <input type="number" id="age" name="age" required>
+                <div class="label1">
+                    <label for="age">Enter your age</label>
+                </div>
+            </div>
+            
+            <div class="entry2">
+                <input type="text" id="sex" name="sex" required>
+                <div class="label2">
+                    <label for="sex">Enter your gender</label>
+                </div>
+            </div>
+            
+            
+        <!--
+<label for="sex">Enter your gender (male/female):</label><br>
+        <input type="text" id="sex" name="sex" required><br><br> -->
+            <div class="entry3">
+                <input type="number" step="0.1" id="bmi" name="bmi" required>
+                <div class="label3">
+                    <label for="bmi">Enter your BMI:</label>
+                </div>
+            </div>
+
+            <div class="entry4">
+                <input type="text" id="children" name="children" required>
+                <div class="label4">
+                    <label for="children">Do you have children (yes/no):</label>
+                </div>
+            </div>
+
+
+            <div class="entry5">
+                <input type="text" id="smoker" name="smoker" required>
+                <div class="label5">
+                    <label for="smoker">Do you smoke (yes/no):</label>
+                </div>
+            </div>
+
+            <div class="entry6">
+                <input type="text" id="region" name="region" required>
+                <div class="label6">
+                    <label for="region">Where do you belong from (southeast, southwest, northeast, northwest):</label>
+                </div>
+            </div>
+
+
+        <div class="submit">
+            <input type="submit" value="Predict">
+        </div>
+    </form>
+
+    {% if prediction_text %}
+        <h3>{{ prediction_text }}</h3>
+    {% endif %}
+    </div>
+
+
+
+
+
+    <div class="mores">
+        <header>
+            <h1 id="top">Medical Insurance: A Comprehensive Guide</h1>
+        </header>
+        <main>
+            <section>
+                <h2>What is Medical Insurance?</h2>
+                <p>
+                    Medical insurance is a type of coverage that helps individuals manage the financial burden of healthcare costs. It typically covers expenses like doctor visits, hospital stays, prescription medications, preventive care, and more.
+                </p>
+            </section>
+    
+            <section>
+                <h2>Key Features of Medical Insurance</h2>
+                <ul>
+                    <li><strong>Coverage Benefits:</strong>
+                        <ul>
+                            <li>In-patient Hospitalization: Costs for hospital stays and treatments.</li>
+                            <li>Pre- and Post-Hospitalization: Expenses for tests, doctor consultations, and medications related to a hospital stay.</li>
+                            <li>Daycare Procedures: Surgeries or treatments that don't require an overnight stay.</li>
+                            <li>Preventive Care: Routine checkups and immunizations.</li>
+                            <li>Emergency Services: Immediate medical attention in emergencies.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Cashless Treatment:</strong> Offered through network hospitals, where the insurer pays directly to the healthcare provider.</li>
+                    <li><strong>Reimbursement:</strong> Bills can be reimbursed for non-network treatments by submitting claims.</li>
+                    <li><strong>Add-on Covers:</strong> Maternity benefits, critical illness coverage, personal accident insurance.</li>
+                </ul>
+            </section>
+    
+            <section>
+                <h2>Why is Medical Insurance Important?</h2>
+                <p>
+                    Medical insurance is crucial for financial protection, access to quality care, tax benefits, and peace of mind.
+                </p>
+            </section>
+    
+            <section>
+                <h2>Types of Medical Insurance Plans</h2>
+                <ul>
+                    <li>Individual Health Insurance: Covers one person with a higher sum insured.</li>
+                    <li>Family Floater Plans: Covers the entire family under one sum insured.</li>
+                    <li>Senior Citizen Plans: Tailored for older individuals.</li>
+                    <li>Critical Illness Insurance: Provides a lump sum on diagnosis of severe illnesses.</li>
+                    <li>Group Health Insurance: Offered by employers to employees.</li>
+                </ul>
+            </section>
+    
+            <section>
+                <h2>How to Choose the Right Medical Insurance?</h2>
+                <p>Consider the following:</p>
+                <ul>
+                    <li>Assess needs (age, family size, medical history).</li>
+                    <li>Sum insured should match potential healthcare costs.</li>
+                    <li>Check network hospital coverage for cashless services.</li>
+                    <li>Choose affordable premiums with adequate coverage.</li>
+                    <li>Pick insurers with high claim settlement ratios.</li>
+                </ul>
+            </section>
+    
+            <section>
+                <h2>Common Exclusions in Medical Insurance</h2>
+                <ul>
+                    <li>Pre-existing conditions during the waiting period.</li>
+                    <li>Cosmetic or aesthetic procedures.</li>
+                    <li>Experimental treatments.</li>
+                    <li>Self-inflicted injuries.</li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 Medical Insurance Guide</p>
+        </footer>
+    </div>
+
+</body>
+</html>

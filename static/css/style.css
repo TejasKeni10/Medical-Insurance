@@ -1,0 +1,568 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    color: black;
+    background-image: url("pexels-karolina-grabowska-4386464.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.content{
+    position: relative;
+    left: 700px;
+    width: 500px;
+    margin-top: 40px;
+    display: inline-block;
+    border-radius: 2px;
+    padding: 10px;
+    top:150px;
+}
+.navbar{
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.navdiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-size: 40px;
+    transition: transform 0.3s ease;
+    position: relative;
+    left: 30px;
+    overflow: hidden;
+}
+.logo:hover{
+    transform: scale(1.2);
+}
+.l1{
+    list-style: none;
+    display: inline-block;
+    padding-right: 20px;
+    border: 2px solid black;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.5s;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.l1:hover{
+    color:white;
+}
+.l1::before{
+    content: "";
+    position:absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background-color: red;
+    z-index: -1;
+    transition: 0.5s;
+    top: 0;
+    border-radius: 0 0 50% 50%;
+}
+.l1:hover::before{
+    height: 180%;
+}
+
+
+.l2{
+    list-style: none;
+    display: inline-block;
+    padding-right: 20px;
+    border: 2px solid black;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.5s;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.l2:hover{
+    color:white;
+}
+.l2::before{
+    content: "";
+    position:absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background-color: red;
+    z-index: -1;
+    transition: 0.5s;
+    top: 0;
+    border-radius: 0 0 50% 50%;
+}
+.l2:hover::before{
+    height: 180%;
+}
+.l3{
+    list-style: none;
+    display: inline-block;
+    padding-right: 20px;
+    border: 2px solid black;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.5s;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.l3:hover{
+    color:white;
+}
+.l3::before{
+    content: "";
+    position:absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background-color: red;
+    z-index: -1;
+    transition: 0.5s;
+    top: 0;
+    border-radius: 0 0 50% 50%;
+}
+.l3:hover::before{
+    height: 180%;
+}
+.main{
+    font-size: 45px;
+    position: absolute;
+    letter-spacing: 2px;
+    left: 640px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#one{
+    color: red;
+}
+#two{
+    color: red;
+}
+#three{
+    color: red;
+}
+.entry1 {
+    position: relative;
+    height: 60px; /* Adjusted to give enough space for floating labels */
+}
+
+#age {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Ensure the input spans the container width */
+    outline: none;
+    font-size: 20px;
+    padding: 10px 15px; /* Adjust padding for better alignment */
+    line-height: 30px;
+    border-radius: 10px;
+    border: 2px solid #f0ffff;
+    background: transparent;
+    transition: 0.3s ease; /* Smoother transitions */
+    z-index: 1; /* Ensure input stays on top */
+}
+
+.label1 {
+    position: absolute;
+    top: 10px; /* Positioned above the input */
+    left: 15px; /* Matches input padding for alignment */
+    font-size: 25px;
+    color: #000000;
+    background-color: transparent;
+    padding: 0 8px; /* Slight padding for visual effect */
+    border-radius: 5px;
+    transition: 0.3s ease; /* Smooth label transition */
+    z-index: 0; /* Behind the input */
+}
+
+#age:focus,
+#age:valid {
+    color: #000000;
+    border: 2px solid #000000;
+}
+
+#age:focus + .label1,
+#age:valid + .label1 {
+    top: -10px; /* Moves label upwards */
+    left: 10px; /* Slight adjustment for padding */
+    font-size: 12px; /* Reduces font size */
+    color: #ffffff;
+    background-color: #ff0000;
+    transform: scale(1); /* Keep scale for clean look */
+    z-index: 1; /* Brings label to the front */
+}
+.entry2 {
+    position: relative;
+    height: 60px; /* Enough space for floating labels */
+}
+
+#sex {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Ensures the input spans the container width */
+    outline: none;
+    font-size: 20px;
+    padding: 10px 15px; /* Padding for better spacing */
+    line-height: 30px;
+    border-radius: 10px;
+    border: 2px solid #f0ffff; /* Initial border */
+    background: transparent;
+    transition: 0.3s ease; /* Smooth transitions */
+    z-index: 1; /* Keeps input above the label */
+}
+
+.label2 {
+    position: absolute;
+    top: 18px; /* Aligns with the input's initial position */
+    left: 15px; /* Matches input padding for alignment */
+    font-size: 20px; /* Consistent font size with input */
+    color: #000000; /* Default label color */
+    background-color: transparent;
+    padding: 0 8px; /* Padding for floating label */
+    border-radius: 5px;
+    transition: 0.3s ease; /* Smooth animations */
+    z-index: 0; /* Places label behind input initially */
+}
+
+#sex:focus,
+#sex:valid {
+    color: #000000; /* Input text color */
+    border: 2px solid #000000; /* Input border on focus/valid */
+}
+
+#sex:focus + .label2,
+#sex:valid + .label2 {
+    top: -12px; /* Moves label upward for floating effect */
+    left: 12px; /* Adjusts padding for floating label */
+    font-size: 14px; /* Smaller font size for floating label */
+    color: #ffffff; /* Label text color on focus/valid */
+    background-color: #ff0000; /* Floating label background */
+    padding: 0 5px; /* Smaller padding for floating label */
+    border-radius: 5px; /* Keeps border radius consistent */
+    z-index: 1; /* Ensures label floats above input */
+}
+.entry3 {
+    position: relative;
+    height: 60px; /* Enough space for floating labels */
+}
+
+#bmi {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Ensures the input spans the container width */
+    outline: none;
+    font-size: 20px;
+    padding: 10px 15px; /* Padding for better spacing */
+    line-height: 30px;
+    border-radius: 10px;
+    border: 2px solid #f0ffff; /* Initial border */
+    background: transparent;
+    transition: 0.3s ease; /* Smooth transitions */
+    z-index: 1; /* Keeps input above the label */
+}
+
+.label3 {
+    position: absolute;
+    top: 18px; /* Aligns with the input's initial position */
+    left: 15px; /* Matches input padding for alignment */
+    font-size: 20px; /* Consistent font size with input */
+    color: #000000; /* Default label color */
+    background-color: transparent;
+    padding: 0 8px; /* Padding for floating label */
+    border-radius: 5px;
+    transition: 0.3s ease; /* Smooth animations */
+    z-index: 0; /* Places label behind input initially */
+}
+
+#bmi:focus,
+#bmi:valid {
+    color: #000000; /* Input text color */
+    border: 2px solid #000000; /* Input border on focus/valid */
+}
+
+#bmi:focus + .label3,
+#bmi:valid + .label3 {
+    top: -12px; /* Moves label upward for floating effect */
+    left: 12px; /* Adjusts padding for floating label */
+    font-size: 14px; /* Smaller font size for floating label */
+    color: #ffffff; /* Label text color on focus/valid */
+    background-color: #ff0000; /* Floating label background */
+    padding: 0 5px; /* Smaller padding for floating label */
+    border-radius: 5px; /* Keeps border radius consistent */
+    z-index: 1; /* Ensures label floats above input */
+}
+.entry4 {
+    position: relative;
+    height: 60px; /* Enough space for floating labels */
+}
+
+#children {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Ensures the input spans the container width */
+    outline: none;
+    font-size: 20px;
+    padding: 10px 15px; /* Padding for better spacing */
+    line-height: 30px;
+    border-radius: 10px;
+    border: 2px solid #f0ffff; /* Initial border */
+    background: transparent;
+    transition: 0.3s ease; /* Smooth transitions */
+    z-index: 1; /* Keeps input above the label */
+}
+
+.label4 {
+    position: absolute;
+    top: 18px; /* Aligns with the input's initial position */
+    left: 15px; /* Matches input padding for alignment */
+    font-size: 20px; /* Consistent font size with input */
+    color: #000000; /* Default label color */
+    background-color: transparent;
+    padding: 0 8px; /* Padding for floating label */
+    border-radius: 5px;
+    transition: 0.3s ease; /* Smooth animations */
+    z-index: 0; /* Places label behind input initially */
+}
+
+#children:focus,
+#children:valid {
+    color: #000000; /* Input text color */
+    border: 2px solid #000000; /* Input border on focus/valid */
+}
+
+#children:focus + .label4,
+#children:valid + .label4 {
+    top: -12px; /* Moves label upward for floating effect */
+    left: 12px; /* Adjusts padding for floating label */
+    font-size: 14px; /* Smaller font size for floating label */
+    color: #ffffff; /* Label text color on focus/valid */
+    background-color: #ff0000; /* Floating label background */
+    padding: 0 5px; /* Smaller padding for floating label */
+    border-radius: 5px; /* Keeps border radius consistent */
+    z-index: 1; /* Ensures label floats above input */
+}
+.entry5 {
+    position: relative;
+    height: 60px; /* Enough space for floating labels */
+}
+
+#smoker {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Ensures the input spans the container width */
+    outline: none;
+    font-size: 20px;
+    padding: 10px 15px; /* Padding for better spacing */
+    line-height: 30px;
+    border-radius: 10px;
+    border: 2px solid #f0ffff; /* Initial border */
+    background: transparent;
+    transition: 0.3s ease; /* Smooth transitions */
+    z-index: 1; /* Keeps input above the label */
+}
+
+.label5 {
+    position: absolute;
+    top: 18px; /* Aligns with the input's initial position */
+    left: 15px; /* Matches input padding for alignment */
+    font-size: 20px; /* Consistent font size with input */
+    color: #000000; /* Default label color */
+    background-color: transparent;
+    padding: 0 8px; /* Padding for floating label */
+    border-radius: 5px;
+    transition: 0.3s ease; /* Smooth animations */
+    z-index: 0; /* Places label behind input initially */
+}
+
+#smoker:focus,
+#smoker:valid {
+    color: #000000; /* Input text color */
+    border: 2px solid #000000; /* Input border on focus/valid */
+}
+
+#smoker:focus + .label5,
+#smoker:valid + .label5 {
+    top: -12px; /* Moves label upward for floating effect */
+    left: 12px; /* Adjusts padding for floating label */
+    font-size: 14px; /* Smaller font size for floating label */
+    color: #ffffff; /* Label text color on focus/valid */
+    background-color: #ff0000; /* Floating label background */
+    padding: 0 5px; /* Smaller padding for floating label */
+    border-radius: 5px; /* Keeps border radius consistent */
+    z-index: 1; /* Ensures label floats above input */
+}
+.entry6 {
+    position: relative;
+    height: 60px; /* Enough space for floating labels */
+}
+
+#region {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Ensures the input spans the container width */
+    outline: none;
+    font-size: 20px;
+    padding: 10px 15px; /* Padding for better spacing */
+    line-height: 30px;
+    border-radius: 10px;
+    border: 2px solid #f0ffff; /* Initial border */
+    background: transparent;
+    transition: 0.3s ease; /* Smooth transitions */
+    z-index: 1; /* Keeps input above the label */
+}
+
+.label6 {
+    position: absolute;
+    top: 18px; /* Aligns with the input's initial position */
+    left: 15px; /* Matches input padding for alignment */
+    font-size: 17spx; /* Consistent font size with input */
+    color: #000000; /* Default label color */
+    background-color: transparent;
+    padding: 0 8px; /* Padding for floating label */
+    border-radius: 5px;
+    transition: 0.3s ease; /* Smooth animations */
+    z-index: 0; /* Places label behind input initially */
+}
+
+#region:focus,
+#region:valid {
+    color: #000000; /* Input text color */
+    border: 2px solid #000000; /* Input border on focus/valid */
+}
+
+#region:focus + .label6,
+#region:valid + .label6 {
+    top: -12px; /* Moves label upward for floating effect */
+    left: 12px; /* Adjusts padding for floating label */
+    font-size: 14px; /* Smaller font size for floating label */
+    color: #ffffff; /* Label text color on focus/valid */
+    background-color: #ff0000; /* Floating label background */
+    padding: 0 5px; /* Smaller padding for floating label */
+    border-radius: 5px; /* Keeps border radius consistent */
+    z-index: 1; /* Ensures label floats above input */
+}
+.submit {
+    text-align: center; /* Centers the button within the container */
+    margin-top: 20px; /* Adds some spacing above the button */
+}
+
+.submit input[type="submit"] {
+    font-size: 18px; /* Adjusts the font size */
+    font-weight: bold; /* Makes the text bold */
+    color: #ffffff; /* Button text color */
+    background-color: #4CAF50; /* Initial button background color (green) */
+    border: none; /* Removes default border */
+    border-radius: 10px; /* Rounds the corners */
+    padding: 12px 20px; /* Adds padding for a larger, clickable button */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effects */
+}
+
+.submit input[type="submit"]:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly enlarges button on hover */
+}
+
+.submit input[type="submit"]:active {
+    background-color: #3e8e41; /* Darker shade for active state */
+    transform: scale(0.95); /* Slightly shrinks button when clicked */
+}
+h3 {
+    font-size: 24px; /* Adjusts the text size */
+    font-weight: bold; /* Makes the text bold */
+    color: #000000; /* Sets a green color to indicate success or prediction */
+    text-align: center; /* Centers the text on the page */
+    margin-top: 20px; /* Adds space above the text */
+    padding: 10px; /* Adds padding around the text */
+    border: 2px solid #4CAF50; /* Adds a border for emphasis */
+    border-radius: 10px; /* Rounds the corners */
+    background-color: #f9f9f9; /* Light background to contrast the text */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adds hover effect smoothness */
+}
+
+h3:hover {
+    transform: scale(1.05); /* Slightly enlarges the text block on hover */
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15); /* Enhances shadow on hover */
+}
+
+
+
+
+header {
+    background: transparent;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #000000;
+    padding: 20px 10px;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: -150px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+main {
+    max-width: 800px;
+    margin: 200px auto 20px; /* Adjusted margin-top to 200px */
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    padding: 20px;
+    box-sizing: border-box; /* Ensures padding is included in width/height */
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: square;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: #fff;
+    font-size: 0.9em;
+}
+.mores{
+    margin-top: 200px;
+}
